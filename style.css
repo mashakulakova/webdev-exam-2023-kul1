@@ -1,12 +1,12 @@
 .section1 {
-    background-color: rgb(1, 1, 210);
+    background-color: rgb(58, 58, 180) !important;
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
 
 .section2 {
     color: rgb(0, 0, 0);
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(219, 219, 219);
 }
 
 .section3 {
@@ -14,25 +14,25 @@
 }
 
 .section4 {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(219, 219, 219);
 }
 
 .section5 {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(219, 219, 219);
 }
 
 .blueBack {
-    background-color: rgb(1, 1, 210);
+    background-color: rgb(58, 58, 180);
 }
 
 header {
-    background-color: rgb(141, 113, 83) !important;
-    color: white;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0);
 }
 
 footer {
-    background-color: rgb(141, 113, 83);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .border {
@@ -67,21 +67,21 @@ td {
 }
 
 .btn {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(219, 219, 219);
     padding: 0 10px;
     font-size: 100%;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     outline: none;
     cursor: pointer;
     height: 100%;
-    border: 3px solid rgb(187, 187, 187);
+    border: 3px solid rgb(219, 219, 219);
     box-sizing: border-box;
 }
 
 .btn:hover {
     background-color: #F2F5F1;
-    color: black;
+    color: rgb(108, 108, 108);
 }
 .active {
     background-color: #F2F5F1;
@@ -95,20 +95,20 @@ td {
     margin-right: 5px;
 }
 .btncolor {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(219, 219, 219);
     padding: 0 10px;
     font-size: 100%;
     font-weight: small;
-    color: white;
+    color: rgb(77, 77, 77);
     outline: none;
     cursor: pointer;
     height: 100%;
-    border: 3px solid rgb(187, 187, 187);
+    border: 3px solid rgb(219, 219, 219);
     box-sizing: border-box;
 }
 
 .btncolor1 {
-    background-color: rgb(1, 1, 210);
+    background-color: rgb(58, 58, 180);
     padding: 0 10px;
     font-size: 100%;
     font-weight: small;
@@ -116,10 +116,15 @@ td {
     outline: none;
     cursor: pointer;
     height: 100%;
-    border: 3px solid rgb(1, 1, 210);
+    border: 3px solid rgb(58, 58, 180);
     box-sizing: border-box;
 }
 .button1 {
     text-align: center;
     padding: 10px; 
+}
+@media (max-width: 576px) or (orientation: portrait){
+    input, select {
+        width: 100%;
+    }
 }
