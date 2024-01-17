@@ -21,7 +21,7 @@ function displayRoutes(routes) {           // Вывод информации н
    let tableBody = document.getElementById('routes');     //Получение ссылки на элемент в html
    tableBody.innerHTML = "";                    //Очистка от старых данных в таблице
    for (let i = 0; i < routes.length; i++) {      //Цикл для перебора массива routes и добавления данных в таблицу 
-    tableBody.innerHTML += `<tr><td>${routes[i].name}</td>` +
+    tableBody.innerHTML += `<tr><td>${routes[i].name}</td>` +         //Добавление HTML-кода внутри элемента с id
         `<td>${routes[i].description}</td>` +
         `<td>${routes[i].mainObject}</td>` +
         `<td><button>Выбрать</button></td>`;
