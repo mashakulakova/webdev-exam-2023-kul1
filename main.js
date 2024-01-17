@@ -12,13 +12,13 @@ function getRouts(){
             console.error('Ошибка', xhr.status);   //Обработка ошибок
         }
     };
-    xhr.onerror = function() {     // Обработчик события ошибки
+    xhr.onerror = function() {     //Обработчик события ошибки при отправке запроса
         console.error('Ошибка');
     };
 }
 
 function displayRoutes(routes) {           // Вывод информации на страницу
-   let tableBody = document.getElementById('routes');     //
+   let tableBody = document.getElementById('routes');     //Получение ссылки на элемент в html
    tableBody.innerHTML = "";                    //Очистка от старых данных в таблице
    for (let i = 0; i < routes.length; i++) {      //Цикл для перебора массива routes и добавления данных в таблицу 
     tableBody.innerHTML += `<tr><td>${routes[i].name}</td>` +
@@ -28,6 +28,6 @@ function displayRoutes(routes) {           // Вывод информации н
     }
 }
 
-window.onload = (e) => {
+window.onload = (e) => {     //Обработчик события для окна, вызывающий функцию getRoutes
     getRouts();
 };
